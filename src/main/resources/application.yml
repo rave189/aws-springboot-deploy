@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    - oauth
   datasource:
     url: jdbc:h2:mem:testdb
     username: sa
@@ -15,9 +13,9 @@ spring:
     console:
       enabled: true
 
-# 스프링 2.7 버전 사용시 mustache 한글 깨짐 현상 발생
-# 아래 코드 추가 해결할 수 있음
 server:
   servlet:
     encoding:
       force-response: true
+# 스프링 2.7 버전 사용시 mustache 한글 깨짐 현상 발생
+# 아래 코드 추가 해결할 수 있음
